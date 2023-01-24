@@ -1,27 +1,32 @@
 import React from 'react'
 import styles, { layout } from '../style';
-import rectangle65 from "../Assets/rectangle65.png";
+import artwork from "../Assets/artwork.png";
 
 const Creator = () => {
   return (
-    <section id="creator" className={`${layout.section}  w-full px-6 `}>
-          <div className={`${layout.sectionInfo} mb-36 mt-20 `}>
-            <h2 className="w-[348px] h-[24px] font-Avenir font-[16px] text-[#526D81]">
+    <section id="creator" className="flex flex-col ml-[108px] w-full">
+
+          <div className={`${layout.sectionInfo} mb-[388px]`}>
+
+            <h2 className="font-Metropolis font-[16px] text-[#526D81] mt-[80px] leading-10">
             CREATORS VS TROLLERS
             </h2>
-            <span className={`${styles.paragraph} font-Karla font-bold font-[34px] text-[#FFFFFF] max-w-[424px] mt-1 align-center`}>
+
+            <span className="font-Karla font-bold text-[34px] text-[#148AB5] mt-[10px] align-center leading-10">
             End of an Era of<br /> Celebrity Worship
             </span>
-            <p className={`${styles.paragraph} font-Avenir font-Regular font-[18px] text-[#FFFFFF] mt-4`}>
+
+            <p className="font-Metropolis font-normal text-[18px] text-[#FFFFFF] mt-[15px]">
             While designed simply to enable celebrity<br /> worship, the poor celebrities are bearing the<br /> brunt of trolling on social media as it stands
             </p>
-            </div>
+            
+             </div>
 
-            <div className='absolute flex flex-col justify-left items-left mb-96 ml-96 px-20'>
-        <img src={rectangle65} alt="" className="w-[624px] h-[440px]" />
+            <div className='absolute flex flex-col justify-left items-left ml-[398px] gap-x-[120px]'>
+        <img src={artwork} alt="" className="w-[600px] h-[420px]" />
       </div>
             </section>
   )
 }
 
-export default Creator
+export default Creator;

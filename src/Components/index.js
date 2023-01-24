@@ -6,6 +6,7 @@ import Kyc from "./Kyc";
 import Signup from "./Signup";
 import Statistics from "./Statistics";
 import Stories from "./Stories";
+import SignUpDialog from "./SignUpDialog";
 
 
 export {
@@ -17,5 +18,6 @@ export {
     Signup,
     Statistics,
     Stories,
+    SignUpDialog
     
 };

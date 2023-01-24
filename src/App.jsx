@@ -1,15 +1,16 @@
 import styles from "./style";
-import { Communication, Creator, Footer, Navbar, Kyc, Signup, Statistics, Stories, Testinomials } from "./Components";
+import { Communication, Creator, Footer, Navbar, Kyc, Signup, Statistics, Stories, SignUpDialog } from "./Components";
 
 const App = () => (
-  <div className="bg-primary w-full overflow-hidden">
-    <div className={` ${styles.flexCenter}`}>
+  <div className="bg-[#0B2146] w-full overflow-hidden">
+    <div className={styles.flexCenter}>
       <div className={`${styles.boxWidth}`}>
         <Navbar />
-      </div>
+        <SignUpDialog />
+          </div>
     </div>
 
-    <div className={`bg-[#0B4E66] w-full ${styles.flexStart}`}>
+    <div className={`bg-[#061D2D] w-full ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
         <Statistics />
       </div>
@@ -17,21 +18,24 @@ const App = () => (
 
     
     
-    <div className={` bg-gradient-to-l from-[#7B61FFB5] to-[#061D2D5C] w-full ${styles.paddingX} ${styles.flexCenter}`}>
+    <div className={`bg-gradientTwo w-full ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
       <Kyc />
       </div>
       </div>
 
-      <div className={`bg-[#0B4E66] w-full ${styles.flexCenter} ${styles.paddingX}`}>
+      <div className={`bg-[#0B2146] w-full ${styles.flexCenter} ${styles.paddingX}`}>
       <div className={`${styles.boxWidth}`}>
         <Communication />
         <Stories />
-        <Creator />
         </div>
+        </div>
+
+        <div className={`bg-[#0B2146] w-full ${styles.flexCenter} ${styles.paddingX}`}>
+          <Creator/>
         </div>
         
-        <div className={`bg-gradient-to-l from-[#FF5630B8] to-[#061D2D5C] w-full ${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`bg-gradientOne  w-full ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
       <Signup />
       </div>
@@ -41,8 +45,11 @@ const App = () => (
       <div className={`${styles.boxWidth}`}>
          
          <Footer />
+        
       </div>
     </div>
+
+
   </div>
 );
 

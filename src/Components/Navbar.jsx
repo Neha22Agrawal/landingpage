@@ -1,42 +1,41 @@
-import { useState } from "react";
-import banner from "../Assets/banner.png";
-import asset1 from "../Assets/asset1.png";
-import asset2 from "../Assets/asset2.png";
-import asset3 from "../Assets/asset3.png";
+import SignUpDialog from './SignUpDialog';
 import banner1 from "../Assets/banner1.png";
 import toung from "../Assets/toung.png";
-import frame67 from "../Assets/frame67.png";
-
 
 const Navbar = () => {
   
   return (
-    
-<nav className="w-full flex  justify-between items-center navbar ">
-      <div className="flex flex-col justify-center items-center w-full">
-        <img src={banner1} alt="" className="w-[1440px] h-[852px]"/>
-        <img src={toung} alt="" className="w-[720px] h-[557px] mt-40 absolute "/>
-        <h1 className="w-[216px] font-Karla text-[38px] font-extrabold text-[#FFFFFF] mt-48 ml-12 absolute ">
-        Trust only</h1>
-        <span className="w-[281px] font-karla font-extrabold text-[48px] text-[#F4EFDF] mt-72 ml-20 absolute ">
-        Verified!
-        </span>
-      
-        <p className="w-[391px] font-Avenir font-roman text-[20px] text-[#FFFFFF] mt-96 pt-16 ml-20 absolute ">
-        Designed with the power of One Person-<br/>One Vote, so every word of reality matters.<br /> Join the real revolution!
-        </p>
-        <img src={frame67} alt="" className="w-[616px] h-[176px] mt-96 absolute"/>
-        
-        
-        
+    <>
+<div className='-z-10 flex justify-center'>
+
+        <img alt='landingpage banner' src={banner1} width={1440} height={852}/>
+
+        <div className='absolute top-60'>
+
+          <img alt='tongue' src={toung} width={700} height={557} />
+          <div className='absolute top-52 text-center'>
+
+            <h4 className='font-Karla text-[48px] font-extrabold leading-[58px] tracking-tight text-white'>
+              Trust only
+            </h4>
+
+            <h2 className='font-Karla text-[72px] font-extrabold leading-[72px] tracking-tight text-[#F4EFDF]'>
+              Verified!
+            </h2>
+
+            <p className='font-regular ml-auto mr-auto mt-3 w-[50%] text-center font-Metropolis text-xl leading-6 text-white'>
+              Designed with the power of One Person-One Vote, so every word of
+              reality matters.<br/> Join the real revolution!
+            </p>
+
+          </div>
+        </div>
       </div>
       
-      
-
-      </nav>
+    </>
 
        
-        
+    
    
   );
 };
